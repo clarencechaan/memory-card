@@ -1,0 +1,64 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+#root,
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+}
+
+.title-container {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(245, 245, 245, 0.5);
+  backdrop-filter: blur(10px);
+  margin-bottom: 20px;
+}
+
+.title {
+  filter: grayscale(100%) brightness(0%);
+  width: 750px;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.score,
+.high-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: rgb(245, 245, 245, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.cards-container {
+  display: grid;
+  gap: 20px;
+  height: 470px;
+  min-width: 1200px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+}
