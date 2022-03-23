@@ -121,7 +121,7 @@ function App() {
       style={{
         backgroundImage: `url(${background})`,
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "top center cover",
+        backgroundPosition: "top center",
       }}
     >
       <div className="title-container">
